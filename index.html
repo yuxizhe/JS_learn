@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	.idd1{
+		margin-top:5px;
+     margin-left:5px;
+width:40px;
+height:30px;
+background-color:#4F87C2;
+text-align:center;
+float: left;
+}
+
+.idd{
+		margin-top:5px;
+     margin-left:5px;
+width:30px;
+height:40px;
+background-color:#4F87C2;
+text-align:center;
+float: left;
+}
+
+.idd2{
+		margin-top:5px;
+     margin-left:5px;
+width:300px;
+height:400px;
+background-color:#ccc;
+text-align:center;
+
+}
+
+.clear{ clear:both}
+
+</style>
+
+<script>
+
+
+
+function getIE(e){
+var t=e.offsetTop;
+var l=e.offsetLeft;
+while(e=e.offsetParent){
+t+=e.offsetTop;
+l+=e.offsetLeft;
+
+alert("top="+t+"\nleft="+l);
+}
+</script>
+<body>
+<p>码垛演示</p>
+<div  class="idd2">
+<div class="idd" id="idd1" ></div>
+<div class="idd" id="idd2"></div>
+<div class="idd" id="idd3"></div>
+<div class="idd" id="idd4"></div>
+<div class="clear" ></div> 
+<div class="idd" id="idd5"></div>
+<div class="idd" id="idd6"></div>
+<div class="idd" id="idd7"></div>
+<div class="idd" id="idd8"></div>
+<div class="clear" ></div> 
+<div class="idd1" id="idd9"></div>
+<div class="idd1" id="idd10"></div>
+<div class="idd1" id="idd11"></div>
+<div class="clear" ></div>
+<div class="idd1" id="idd12"></div>
+<div class="idd1" id="idd13"></div>
+<div class="idd1" id="idd14"></div>
+<div class="clear" ></div>
+<div class="idd1" id="idd15"></div>
+<div class="idd1" id="idd16"></div>
+<div class="idd1" id="idd16"></div>
+	
+	</div>
+<input id=a type="button" onclick="getIE(this)" value="查看位置">
+
+</body>
+</html>
